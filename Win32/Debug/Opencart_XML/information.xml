@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<itemlist>
+<title>XML Export - 20/12/2018 18:04:34</title>
+<item>
+	<information_id><![CDATA[3]]></information_id>
+	<bottom><![CDATA[1]]></bottom>
+	<sort_order><![CDATA[3]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<title_ru><![CDATA[Политика Безопасности]]></title_ru>
+	<description_ru><![CDATA[<p>
+	Privacy Policy</p>]]></description_ru>
+	<meta_title_ru><![CDATA[Политика Безопасности]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<information_id><![CDATA[4]]></information_id>
+	<bottom><![CDATA[1]]></bottom>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<title_ru><![CDATA[О нас]]></title_ru>
+	<description_ru><![CDATA[<p>
+	About Us</p>]]></description_ru>
+	<meta_title_ru><![CDATA[О нас]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<information_id><![CDATA[5]]></information_id>
+	<bottom><![CDATA[1]]></bottom>
+	<sort_order><![CDATA[4]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<title_ru><![CDATA[Условия соглашения]]></title_ru>
+	<description_ru><![CDATA[<p>
+	Terms &amp; Conditions</p>]]></description_ru>
+	<meta_title_ru><![CDATA[Условия соглашения]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<information_id><![CDATA[6]]></information_id>
+	<bottom><![CDATA[1]]></bottom>
+	<sort_order><![CDATA[2]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<title_ru><![CDATA[Доставка]]></title_ru>
+	<description_ru><![CDATA[<p>
+	Delivery Information</p>]]></description_ru>
+	<meta_title_ru><![CDATA[Доставка]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item></itemlist>

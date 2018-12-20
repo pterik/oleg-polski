@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.DateUtils, System.Variants,
-  System.Classes,System.IOUtils,
+  System.Classes,System.IOUtils, System.Rtti,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls,
   IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient, IdHTTP,
   IdIOHandler, IdIOHandlerStream, Data.DBXOdbc, Data.FMTBcd, Data.SqlExpr,
@@ -17,12 +17,33 @@ uses
   ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection;
 
 const CRLF=chr($0D)+chr($0A);
+
+type
+defaults = record
+     UniSt : Unicodestring;
+ end;
+
 type
 TParsedRec = record
-  SKU, EAN, Description, Name, Color, Size, qty, price, assortment, product_type, manufacturer, category, image1, image2:UnicodeString;
+  sku, ean, description, name, color,
+  size, qty, price, assortment, product_type,
+  manufacturer, category, image1, image2:UnicodeString;
+end;
+TProductRec = record
+ product_id, model, sku, upc, ean, jan,
+ isbn, mpn, location, quantity, stock_status_id,
+ image, manufacturer, manufacturer_id, shipping, price, points,
+ tax_class_id, date_available, weight, weight_class_id, length,
+ width, height, length_class_id, subtract, minimum,
+ sort_order, status, viewed, date_added, date_modified,
+ import_batch, seo_keyword, link, store,
+ name_ru, fimage_ru, video1_ru, html_product_shortdesc_ru, html_product_right_ru,
+ html_product_tab_ru, tab_title_ru, description_ru, tag_ru,
+ meta_title_ru, meta_description_ru, meta_keyword_ru, additional_images, product_filter,
+ product_attribute, product_option, product_category, product_discount, product_special:UnicodeString;
 end;
 type
-  TForm2 = class(TForm)
+  TFormMain = class(TForm)
     BitBtn1: TBitBtn;
     BitBtn2: TBitBtn;
     MemoLog: TMemo;
@@ -39,7 +60,7 @@ type
     ZSQLMonitor1: TZSQLMonitor;
     ZUpdateSQL1: TZUpdateSQL;
     MemoXML: TMemo;
-    MemoOpen: TMemo;
+    MemoProduct: TMemo;
     procedure IdHTTPWork(ASender: TObject; AWorkMode: TWorkMode;
       AWorkCount: Int64);
     procedure IdHTTPWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
@@ -55,20 +76,28 @@ type
   procedure Log(Msg:string);
   function GetXMLFile(FileName:string):boolean;
   procedure ConvertXMLToOpenCart(XMLName:string);
-  function ParseLine(S:UnicodeString):TParsedRec;
-  function SaveLine(R:TParsedRec):UnicodeString;
+  procedure ParseLine(var R:TParsedRec; const S:UnicodeString);
+  function SaveProduct(P:TProductRec):UnicodeString;
   procedure FindTag(const S:UnicodeString; const Tag:UnicodeString; var TagValue:UnicodeString);
+  function SaveTag(TagName, TagValue:UnicodeString):UnicodeString;
   function ReplaceHTMLSymbols(const S:UnicodeString):Unicodestring;
+  procedure ClearParsedRec(var R:TParsedRec);
+  procedure ClearProductRec(var W:TProductRec);
+  procedure CopyRecords(R:TParsedRec; var P:TProductRec);
+  function Replace_Manufacture_ID(Name:UnicodeString):UnicodeString;
+  function Replace_Manufacture(Name:UnicodeString):UnicodeString;
+  function Replace_Category(CatName:UnicodeString):UnicodeString;
+  function Replace_Color(ColorName:UnicodeString):UnicodeString;
   end;
 
 var
-  Form2: TForm2;
+  FormMain: TFormMain;
 
 implementation
 
 {$R *.dfm}
 
-procedure TForm2.BitBtn1Click(Sender: TObject);
+procedure TFormMain.BitBtn1Click(Sender: TObject);
 var XMLName:string;
  Year, Month, Day: Word;
 GotIt:boolean;
@@ -88,7 +117,7 @@ if FileExists(XMLName)
 ConvertXMLToOpenCart('20181219 — cutted.xml');
 end;
 
-procedure TForm2.BitBtnGetXMLClick(Sender: TObject);
+procedure TFormMain.BitBtnGetXMLClick(Sender: TObject);
 var
  FGetStream:TFileStream;
  FXMLStream :TFileStream;
@@ -119,6 +148,8 @@ try
   S:=StringReplace(S, '</product>','</product>'+Char($0D)+Char($0A),[rfReplaceAll, rfIgnoreCase]);
   S:=StringReplace(S, '&lt;', '<', [rfReplaceAll, rfIgnoreCase]);
   S:=StringReplace(S, '&gt;', '>', [rfReplaceAll, rfIgnoreCase]);
+//  S:=StringReplace(S, '<![CDATA[', '', [rfReplaceAll, rfIgnoreCase]);
+//  S:=StringReplace(S, ']]>', '', [rfReplaceAll, rfIgnoreCase]);
   FXMLStream.WriteBuffer(S[1], Length(S));
   finally
     FXMLStream.Free;
@@ -128,33 +159,142 @@ if FileExists(GetName) then begin DeleteFile(GetName); Sleep(1000);end;
 Log('Создаём новые файлы для загрузки ');
 end;
 
-procedure TForm2.Button1Click(Sender: TObject);
+procedure TFormMain.Button1Click(Sender: TObject);
 var
-  Connection: TSQLConnection;
+//  Connection: TSQLConnection;
+  rttiContext : TRttiContext;
+  fld, fld2 : TRttiField;
+  i:integer;
+  S:UnicodeString;
+  P:TProductRec;
+//  myRec: defaults;
+  rttiType: TRttiType;
+  fields: TArray<TRttiField>;
 begin
+// myRec.dims := 10;
+  P.product_id := 'PRODUCT';
+  P.Name_ru := 'JUST NAME';
+
+  (*
+  fld := rttiContext.GetType(TypeInfo(defaults)).GetField('dims');
+  i := fld.GetValue(@myRec).AsInteger;
+  fld.SetValue(@myRec, 42);
+  *)
+
+//  fld := rttiContext.GetType(TypeInfo(defaults)).GetField('st');
+//  S := fld.GetValue(@myRec).AsString;
+//  ShowMessage(S);
+//  fld.SetValue(@myRec, '42');
+
+//ClearParsedRec(R);
+//R.name:='Name';
+for fld in rttiContext.GetType(TypeInfo(TProductRec)).GetFields do
+    begin
+    fld2 := rttiContext.GetType(TypeInfo(TProductRec)).GetField(fld.Name);
+    S := fld2.GetValue(@P).AsString;
+    //fld2.SetValue(@myrec, 42);
+    MemoLog.Lines.Add('Field '+fld.Name+' = "'+S+'"');
+    end;
+
+
 // https://www.justsoftwaresolutions.co.uk/delphi/dbexpress_and_mysql_5.html
-  Connection := TSQLConnection.Create(nil);
-  Connection.DriverName := 'dbxmysql';
-  Connection.GetDriverFunc := 'getSQLDriverMYSQL50';
-  Connection.LibraryName := 'dbxopenmysql50.dll';
-  Connection.VendorLib := 'libmysql.dll';
-  Connection.Params.Append('Database=NAME_OF_DATABASE');
-  Connection.Params.Append('User_Name=NAME_OF_USER');
-  Connection.Params.Append('Password=PASSWORD');
-  Connection.Params.Append('HostName=localhost');
-  Connection.Open;
-
-  // ... do stuff
-
-  Connection.Free;
+//  Connection := TSQLConnection.Create(nil);
+//  Connection.DriverName := 'dbxmysql';
+//  Connection.GetDriverFunc := 'getSQLDriverMYSQL50';
+//  Connection.LibraryName := 'dbxopenmysql50.dll';
+//  Connection.VendorLib := 'libmysql.dll';
+//  Connection.Params.Append('Database=NAME_OF_DATABASE');
+//  Connection.Params.Append('User_Name=NAME_OF_USER');
+//  Connection.Params.Append('Password=PASSWORD');
+//  Connection.Params.Append('HostName=localhost');
+//  Connection.Open;
+//  Connection.Free;
 end;
 
-procedure TForm2.ConvertXMLToOpenCart(XMLName: string);
+procedure TFormMain.ClearParsedRec(var R: TParsedRec);
+begin
+R.sku:='';
+R.ean:='';
+R.description:='';
+R.name:='';
+R.color:='';
+R.size:='';
+R.qty:='';
+R.price:='';
+R.assortment:='';
+R.product_type:='';
+R.manufacturer:='';
+R.category:='';
+R.image1:='';
+R.image2:='';
+end;
+
+procedure TFormMain.ClearProductRec(var W: TProductRec);
+begin
+W.product_id:='';
+W.model:='';
+W.sku:='';
+W.upc:='';
+W.ean:='';
+W.jan:='';
+W.isbn:='';
+W.mpn:='';
+W.location:='';
+W.quantity:='';
+W.stock_status_id:='';
+W.image:='';
+W.manufacturer_id:='';
+W.shipping:='';
+W.price:='';
+W.points:='';
+W.tax_class_id:='';
+W.date_available:='';
+W.weight:='';
+W.weight_class_id:='';
+W.length:='';
+W.width:='';
+W.height:='';
+W.length_class_id:='';
+W.subtract:='';
+W.minimum:='';
+W.sort_order:='';
+W.status:='';
+W.viewed:='';
+W.date_added:='';
+W.date_modified:='';
+W.import_batch:='';
+W.manufacturer:='';
+W.seo_keyword:='';
+W.link:='';
+W.store:='';
+W.name_ru:='';
+W.fimage_ru:='';
+W.video1_ru:='';
+W.html_product_shortdesc_ru:='';
+W.html_product_right_ru:='';
+W.html_product_tab_ru:='';
+W.tab_title_ru:='';
+W.description_ru:='';
+W.tag_ru:='';
+W.meta_title_ru:='';
+W.meta_description_ru:='';
+W.meta_keyword_ru:='';
+W.additional_images:='';
+W.product_filter:='';
+W.product_attribute:='';
+W.product_option:='';
+W.product_category:='';
+W.product_discount:='';
+W.product_special:='';
+end;
+
+procedure TFormMain.ConvertXMLToOpenCart(XMLName: string);
 var OpenName:String;
  S:UnicodeString;
  FOpenText:TextFile;
  FXMLtext :TextFile;
  R:TParsedRec;
+ P:TProductRec;
  FS:TFormatSettings;
 begin
 OpenName:=StringReplace(XMLName, '.xml', '_oc.xml', [rfIgnoreCase]);
@@ -170,29 +310,18 @@ Writeln(FOpentext, '<?xml version="1.0"?> <itemlist> <title>XML Export - '+DateT
 while not EOF(FXMLText) do
   begin
   Readln(FXMLText, S);
+  S:=StringReplace(S, '<![CDATA[', '', [rfReplaceAll, rfIgnoreCase]);
+  S:=StringReplace(S, ']]>', '', [rfReplaceAll, rfIgnoreCase]);
   MemoXML.Lines.Add(S);
   if Pos('xml version=', S) >0 then continue;
   if Pos('</products>', S) >0 then continue;
   if (Pos('<product>', S) >0) and (Pos('</product>', S)>0) then
     begin
-    R:=ParseLine(S);
-    MemoOpen.Lines.Add(
-    'sku="'+r.sku+
-    '" ean="'+r.ean+
-    '" name="'+r.name+
-    '" color="'+r.color+
-    '" size="'+r.size+
-    '" qty="'+r.qty+
-    '" price="'+r.price+
-    '" assortment="'+r.assortment+
-    '" type="'+r.product_type+
-    '" manufacturer="'+r.manufacturer+
-    '" category="'+r.category+
-    '" image1="'+r.image1+
-    '" image2="'+r.image2+
-    '"');
-    MemoOpen.Lines.Add('description="'+r.description);
-    Writeln(FOpenText, SaveLine(R));
+    ClearParsedRec(R);
+    ParseLine(R, S);
+    ClearProductRec(P);
+    CopyRecords(R, P);
+    Writeln(FOpenText, SaveProduct(P));
     end;
 
   end;
@@ -203,7 +332,54 @@ finally
   end;
 end;
 
-procedure TForm2.FindTag(const S:UnicodeString; const Tag:UnicodeString;  var TagValue:UnicodeString);
+procedure TFormMain.CopyRecords(R: TParsedRec; var P: TProductRec);
+var quantity:real;
+FS:TFormatSettings;
+begin
+P.sku:=R.sku;
+P.ean:=R.ean;
+FS:=TFormatSettings.Create('en-US');
+Quantity:=StrToFloatDef(R.qty, 0, FS);
+if Quantity>0
+then
+  begin
+  p.quantity:=R.qty;
+  p.status := '1';
+  end
+else
+  begin
+  p.quantity:='0';
+  p.status := '';
+  end;
+p.description_ru:=r.description;
+p.name_ru:=r.name;
+p.price:=r.price;
+p.image:=r.image1;
+p.additional_images:=r.image2;
+p.date_available:=DateTimeToStr(Now, FS);
+p.date_added:='';
+p.date_modified:=DateTimeToStr(Now, FS);
+p.manufacturer_id:=Replace_Manufacture_ID(r.manufacturer);
+p.manufacturer:=Replace_Manufacture(r.manufacturer);
+p.product_filter:=''; //TODO: Закончить фильтр
+p.product_attribute:=''; //TODO: Закончить атрибуты
+p.product_option:=Replace_Color(r.color)+':'+r.price+':'+'+'+r.qty+':0:+0.00000000:1';
+p.product_category:=Replace_Category(r.category);
+// Исходный
+//  sku, ean, description, name, color,
+//  size, qty, price, assortment, product_type,
+//  manufacturer, category, image1, image2:UnicodeString;
+// Переписать опции в вид
+// 	<product_option><![CDATA[select:Color:Black:+25.1000:4:1:+1.10000000:1|select:Color:Blue:+26.1000:3:1:+1.00000000:1|select:Color:Red:+28.1000:2:0:+1.20000000:1]]></product_option>
+//  select:Color:Black:+25.1000:4:1:+1.10000000:1|
+//  select:Color:Blue:+26.1000:3:1:+1.00000000:1|
+//  select:Color:Red:+28.1000:2:0:+1.20000000:1
+// Color Red: Price +28.100: Quantity 2: Stock 0: Weight 1.2 : Unknown 1
+
+MemoProduct.Lines.Add('Запись скопирована: '+R.Name);
+end;
+
+procedure TFormMain.FindTag(const S:UnicodeString; const Tag:UnicodeString;  var TagValue:UnicodeString);
 var Tag1, Tag2:UnicodeString;
 Pos1, Pos2:integer;
 begin
@@ -221,7 +397,7 @@ if (Pos(Tag1, lowercase(S))>0) and  (Pos(Tag2, lowercase(S))>0) then
   else TagValue:='';
 end;
 
-function TForm2.GetXMLFile(FileName: string): boolean;
+function TFormMain.GetXMLFile(FileName: string): boolean;
 var  FGetStream:TFileStream;
 begin
 FGetStream := TFileStream.Create(FileName, fmCreate);
@@ -252,32 +428,31 @@ else
   end;
 end;
 
-procedure TForm2.IdHTTPWork(ASender: TObject; AWorkMode: TWorkMode;
+procedure TFormMain.IdHTTPWork(ASender: TObject; AWorkMode: TWorkMode;
   AWorkCount: Int64);
 begin
  ProgressBar1.Position := AWorkCount;
 end;
 
-procedure TForm2.IdHTTPWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
+procedure TFormMain.IdHTTPWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
   AWorkCountMax: Int64);
 begin
 ProgressBar1.Position := 0;
 ProgressBar1.Max := AWorkcountMax;
 end;
 
-procedure TForm2.IdHTTPWorkEnd(ASender: TObject; AWorkMode: TWorkMode);
+procedure TFormMain.IdHTTPWorkEnd(ASender: TObject; AWorkMode: TWorkMode);
 begin
 isFileTransferred:=true;
 end;
 
-procedure TForm2.Log(Msg: string);
+procedure TFormMain.Log(Msg: string);
 begin
 MemoLog.Lines.Add(Msg);
 end;
 
-function TForm2.ParseLine(S: UnicodeString): TParsedRec;
+procedure TFormMain.ParseLine(var R: TParsedRec; const S: UnicodeString);
 var Str:UnicodeString;
-R:TParsedRec;
 begin
 Str:=ReplaceHTMLSymbols(S);
 Str:=StringReplace(Str,UnicodeString('<products>'), '',[rfReplaceAll, rfIgnoreCase]);
@@ -296,10 +471,9 @@ FindTag(Str, 'manufacturer', r.manufacturer);
 FindTag(Str, 'category', r.category);
 FindTag(Str, 'image1', r.image1);
 FindTag(Str, 'image2', r.image2);
-Result:=R;
 end;
 
-function TForm2.ReplaceHTMLSymbols(const S: UnicodeString):UnicodeString;
+function TFormMain.ReplaceHTMLSymbols(const S: UnicodeString):UnicodeString;
 var SR:UnicodeString;
 begin
 SR:=UnicodeString(S);
@@ -349,35 +523,68 @@ if Pos('&#x', SR)>0 then
 Result:=SR;
 end;
 
-function TForm2.SaveLine(R: TParsedRec):UnicodeString;
-var St:UnicodeString;
+function TFormMain.Replace_Category(CatName: UnicodeString): UnicodeString;
+begin
+// TODO: Преарвтить категории
+//<category>Gorteks,Bielizna,Bielizna damska,Biustonosze</category>
+// В значения
+// Аксессуары>Вставки|Аксессуары>Оболочки
+// Согласно файлу category.xml или его аналогу category.csv
+// Например
+// <category>Gorteks,Bielizna,Bielizna damska,Biustonosze</category>
+// раскладывается в
+// Нижнее бельё>Дамское бельё>Бесшовное бельё    короткое поле Бесшовное бельё
+// Находим в коротком пути и выставляем длинный путь
+Result:='';
+end;
+
+function TFormMain.replace_Color(ColorName: UnicodeString): UnicodeString;
+begin
+// TODO: Перевести цвет с польского и поставить его на русском
+// Проверить чтобы он был указан в options на сайте
+Result:='Black';
+end;
+
+function TFormMain.Replace_Manufacture(Name: UnicodeString): UnicodeString;
+begin
+// todo: Заменить Название производителя на польском языке на цифровой номер из русской таблицы
+// соответствие ищем в manufacturer.xml
+Result:='Canon';
+
+end;
+
+function TFormMain.Replace_Manufacture_ID(Name: UnicodeString): UnicodeString;
+begin
+// todo: Заменить Название производителя на польском языке на цифровой номер из русской таблицы
+// соответствие ищем в manufacturer.xml
+Result:='9';
+end;
+
+function TFormMain.SaveProduct(P: TProductRec):UnicodeString;
+var S:UnicodeString;
  FS:TFormatSettings;
+ rttiContext : TRttiContext;
+ fld, fld2 : TRttiField;
 begin
 FS:=TFormatSettings.Create('en-US');
-St:='<item> '+CRLF+'	<category_id><![CDATA[17]]></category_id> '+CRLF;
-if R.image1=''
-  then St:=St+'	<image/> '
-  else
+S:='<item> '+CRLF;
+
+for fld in rttiContext.GetType(TypeInfo(TProductRec)).GetFields do
     begin
-    St:=St+'	<image><![CDATA['+R.image1;
-    St:=St+']]></image>'+CRLF;
+    fld2 := rttiContext.GetType(TypeInfo(TProductRec)).GetField(fld.Name);
+    S:=S+SaveTag(fld.Name,fld2.GetValue(@P).AsString);
     end;
-St:=St+'	<parent_id><![CDATA[52]]></parent_id> '+CRLF;
-St:=St+'	<top><![CDATA[1]]></top> '+CRLF;
-St:=St+'	<column><![CDATA[1]]></column> '+CRLF;
-St:=St+'	<sort_order><![CDATA[4]]></sort_order> '+CRLF;
-St:=St+'	<status><![CDATA[1]]></status> '+CRLF;
-St:=St+'	<date_added><![CDATA['+DateTimeToStr(Now, FS)+']]></date_added> '+CRLF;
-St:=St+'	<date_modified><![CDATA['+DateTimeToStr(Now, FS)+']]></date_modified> '+CRLF;
-St:=St+'	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store> '+CRLF;
-St:=St+'	<full_path_ru><![CDATA['+r.category+']]></full_path_ru> '+CRLF;
-St:=St+'	<name_ru><![CDATA['+r.name+']]></name_ru> '+CRLF;
-St:=St+'	<description_ru><![CDATA['+r.description+']]></description_ru> '+CRLF;
-St:=St+'	<meta_title_ru><![CDATA['+r.name+']]></meta_title_ru> '+CRLF;
-St:=St+'	<meta_description_ru/> '+CRLF;
-St:=St+'	<meta_keyword_ru/> '+CRLF;
-St:=St+'</item>';
-Result:=St;
+S:=S+'</item>';
+MemoProduct.Lines.Add(S);
+Result:=S;
+end;
+
+function TFormMain.SaveTag(TagName, TagValue: UnicodeString): UnicodeString;
+begin
+if TagName='' then begin Result:=''; exit;end;
+if TagValue<>''
+  then Result:= chr($09)+'<'+TagName+'><![CDATA['+TagValue+']]></'+TagName+'>'+CRLF
+  else Result:=chr($09)+'</'+TagName+'>'+CRLF;
 end;
 
 end.

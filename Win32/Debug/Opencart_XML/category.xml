@@ -1,0 +1,1299 @@
+<?xml version="1.0"?>
+<itemlist>
+<title>XML Export - 20/12/2018 18:04:16</title>
+<item>
+	<category_id><![CDATA[104]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-10 12:18:27]]></date_added>
+	<date_modified><![CDATA[2018-12-10 12:18:27]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары]]></full_path_ru>
+	<name_ru><![CDATA[Аксессуары]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Аксессуары]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Аксессуары]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Аксессуары]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[105]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-10 12:19:32]]></date_added>
+	<date_modified><![CDATA[2018-12-10 12:19:32]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё]]></full_path_ru>
+	<name_ru><![CDATA[Нижнее бельё]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Нижнее бельё]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Нижнее бельё]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Нижнее бельё]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[106]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-10 12:42:37]]></date_added>
+	<date_modified><![CDATA[2018-12-10 12:42:37]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда]]></full_path_ru>
+	<name_ru><![CDATA[Одежда]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Одежда]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Одежда]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Одежда]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[107]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-10 12:44:41]]></date_added>
+	<date_modified><![CDATA[2018-12-10 12:44:41]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Чулочные изделия]]></full_path_ru>
+	<name_ru><![CDATA[Чулочные изделия]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Чулочные изделия]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Чулочные изделия]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Чулочные изделия]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[108]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-10 12:45:15]]></date_added>
+	<date_modified><![CDATA[2018-12-10 12:45:15]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Купальники]]></full_path_ru>
+	<name_ru><![CDATA[Купальники]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Купальники]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Купальники]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Купальники]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[109]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-10 12:45:54]]></date_added>
+	<date_modified><![CDATA[2018-12-10 12:45:54]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Новости]]></full_path_ru>
+	<name_ru><![CDATA[Новости]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Новости]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Новости]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Новости]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[110]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 10:18:22]]></date_added>
+	<date_modified><![CDATA[2018-12-12 10:18:22]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Другие]]></full_path_ru>
+	<name_ru><![CDATA[Другие]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Другие]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Другие]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Другие]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[111]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 11:35:58]]></date_added>
+	<date_modified><![CDATA[2018-12-12 11:35:58]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Удлинитель бюстгальтер]]></full_path_ru>
+	<name_ru><![CDATA[Удлинитель бюстгальтер]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Удлинитель бюстгальтер]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Удлинитель бюстгальтер]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Удлинитель бюстгальтер]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[112]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 18:35:33]]></date_added>
+	<date_modified><![CDATA[2018-12-12 18:35:33]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Вставки]]></full_path_ru>
+	<name_ru><![CDATA[Вставки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Вставки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Вставки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Вставки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[113]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 18:36:47]]></date_added>
+	<date_modified><![CDATA[2018-12-12 18:36:47]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Оболочки]]></full_path_ru>
+	<name_ru><![CDATA[Оболочки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Оболочки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Оболочки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Оболочки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[114]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 18:37:47]]></date_added>
+	<date_modified><![CDATA[2018-12-12 18:37:47]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Ремни]]></full_path_ru>
+	<name_ru><![CDATA[Ремни]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Ремни]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Ремни]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Ремни]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[115]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 18:38:19]]></date_added>
+	<date_modified><![CDATA[2018-12-12 18:38:19]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Мешки для стирки]]></full_path_ru>
+	<name_ru><![CDATA[Мешки для стирки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Мешки для стирки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Мешки для стирки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Мешки для стирки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[116]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 18:39:09]]></date_added>
+	<date_modified><![CDATA[2018-12-12 18:39:09]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Подвязки ремни]]></full_path_ru>
+	<name_ru><![CDATA[Подвязки ремни]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Подвязки ремни]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Подвязки ремни]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Подвязки ремни]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[117]]></category_id>
+	<image/>
+	<parent_id><![CDATA[104]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 18:39:51]]></date_added>
+	<date_modified><![CDATA[2018-12-12 18:39:51]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Аксессуары>Перчатки]]></full_path_ru>
+	<name_ru><![CDATA[Перчатки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перчатки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перчатки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перчатки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[118]]></category_id>
+	<image/>
+	<parent_id><![CDATA[105]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:37:15]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:37:15]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё]]></full_path_ru>
+	<name_ru><![CDATA[Дамское бельё]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Дамское бельё]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Дамское бельё]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Дамское бельё]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[119]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:38:16]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:38:16]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Бесшовное бельё]]></full_path_ru>
+	<name_ru><![CDATA[Бесшовное бельё]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Бесшовное бельё]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Бесшовное бельё]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Бесшовное бельё]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[120]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:39:37]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:39:37]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Материнство бельё]]></full_path_ru>
+	<name_ru><![CDATA[Материнство бельё]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Материнство бельё]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Материнство бельё]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Материнство бельё]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[121]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:42:06]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:42:06]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Кушак]]></full_path_ru>
+	<name_ru><![CDATA[Кушак]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Кушак]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Кушак]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Кушак]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[122]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:43:17]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:43:17]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Ночное белье]]></full_path_ru>
+	<name_ru><![CDATA[Ночное белье]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Ночное белье]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Ночное белье]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Ночное белье]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[123]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:44:38]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:44:38]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Нижнее белье]]></full_path_ru>
+	<name_ru><![CDATA[Нижнее белье]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Нижнее белье]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Нижнее белье]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Нижнее белье]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[124]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 19:45:30]]></date_added>
+	<date_modified><![CDATA[2018-12-12 19:45:30]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Распорка]]></full_path_ru>
+	<name_ru><![CDATA[Распорка]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Распорка]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Распорка]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Распорка]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[125]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top/>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:19:19]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:19:19]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Тело]]></full_path_ru>
+	<name_ru><![CDATA[Тело]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Тело]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Тело]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Тело]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[126]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:20:00]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:20:00]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Фиджи]]></full_path_ru>
+	<name_ru><![CDATA[Фиджи]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Фиджи]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Фиджи]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Фиджи]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[127]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:20:28]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:20:28]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Корсеты]]></full_path_ru>
+	<name_ru><![CDATA[Корсеты]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Корсеты]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Корсеты]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Корсеты]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[128]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:21:17]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:21:17]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Подьюбники и слипы]]></full_path_ru>
+	<name_ru><![CDATA[Подьюбники и слипы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Подьюбники и слипы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Подьюбники и слипы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Подьюбники и слипы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[129]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:21:56]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:21:56]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[130]]></category_id>
+	<image/>
+	<parent_id><![CDATA[118]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:22:29]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:22:29]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Дамское бельё>Перевязочный]]></full_path_ru>
+	<name_ru><![CDATA[Перевязочный]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перевязочный]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перевязочный]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перевязочный]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[131]]></category_id>
+	<image/>
+	<parent_id><![CDATA[105]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:23:11]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:23:11]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье]]></full_path_ru>
+	<name_ru><![CDATA[Детское белье]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Детское белье]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Детское белье]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Детское белье]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[132]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:23:57]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:23:57]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Распорка]]></full_path_ru>
+	<name_ru><![CDATA[Распорка]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Распорка]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Распорка]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Распорка]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[133]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:24:33]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:24:33]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Семейные трусы]]></full_path_ru>
+	<name_ru><![CDATA[Семейные трусы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Семейные трусы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Семейные трусы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Семейные трусы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[134]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:25:07]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:25:07]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Фиджи]]></full_path_ru>
+	<name_ru><![CDATA[Фиджи]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Фиджи]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Фиджи]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Фиджи]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[135]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:25:51]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:25:51]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Брюки]]></full_path_ru>
+	<name_ru><![CDATA[Брюки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Брюки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Брюки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Брюки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[136]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:26:19]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:26:19]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Наборы]]></full_path_ru>
+	<name_ru><![CDATA[Наборы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Наборы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Наборы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Наборы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[137]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:28:09]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:28:09]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Ночные рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Ночные рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Ночные рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Ночные рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Ночные рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[138]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:28:55]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:28:55]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[139]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:29:30]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:29:30]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Пижама]]></full_path_ru>
+	<name_ru><![CDATA[Пижама]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Пижама]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Пижама]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Пижама]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[140]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:29:58]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:29:58]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Трусы]]></full_path_ru>
+	<name_ru><![CDATA[Трусы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Трусы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Трусы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Трусы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[141]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:30:41]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:30:41]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Перевязочный]]></full_path_ru>
+	<name_ru><![CDATA[Перевязочный]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перевязочный]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перевязочный]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перевязочный]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[142]]></category_id>
+	<image/>
+	<parent_id><![CDATA[131]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:31:16]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:31:16]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Детское белье>Шорты]]></full_path_ru>
+	<name_ru><![CDATA[Шорты]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Шорты]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Шорты]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Шорты]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[143]]></category_id>
+	<image/>
+	<parent_id><![CDATA[105]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:32:15]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:36:23]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье]]></full_path_ru>
+	<name_ru><![CDATA[Мужское нижнее белье]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Мужское нижнее белье]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Мужское нижнее белье]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Мужское нижнее белье]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[144]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:33:10]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:33:10]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Нижнее белье]]></full_path_ru>
+	<name_ru><![CDATA[Нижнее белье]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Нижнее белье]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Нижнее белье]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Нижнее белье]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[145]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:34:03]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:34:03]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Семейные трусы]]></full_path_ru>
+	<name_ru><![CDATA[Семейные трусы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Семейные трусы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Семейные трусы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Семейные трусы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[146]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:34:42]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:38:49]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Ночные рубашки ]]></full_path_ru>
+	<name_ru><![CDATA[Ночные рубашки ]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Ночные рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Ночные рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Ночные рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[147]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:35:44]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:35:44]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Брюки]]></full_path_ru>
+	<name_ru><![CDATA[Брюки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Брюки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Брюки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Брюки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[148]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:39:36]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:39:36]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[149]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:40:12]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:40:12]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Пижама]]></full_path_ru>
+	<name_ru><![CDATA[Пижама]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Пижама]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Пижама]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Пижама]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[150]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:41:47]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:41:47]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Трусы]]></full_path_ru>
+	<name_ru><![CDATA[Трусы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Трусы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Трусы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Трусы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[151]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:42:47]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:42:47]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Вьетнамки]]></full_path_ru>
+	<name_ru><![CDATA[Вьетнамки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Вьетнамки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Вьетнамки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Вьетнамки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[152]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:43:24]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:43:24]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Перевязочный]]></full_path_ru>
+	<name_ru><![CDATA[Перевязочный]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перевязочный]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перевязочный]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перевязочный]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[153]]></category_id>
+	<image/>
+	<parent_id><![CDATA[143]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:50:23]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:50:23]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Нижнее бельё>Мужское нижнее белье>Шорты]]></full_path_ru>
+	<name_ru><![CDATA[Шорты]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Шорты]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Шорты]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Шорты]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[154]]></category_id>
+	<image/>
+	<parent_id><![CDATA[106]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:51:27]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:51:27]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда]]></full_path_ru>
+	<name_ru><![CDATA[Женская одежда]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Женская одежда]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Женская одежда]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Женская одежда]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[155]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:52:19]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:52:19]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Толстовки]]></full_path_ru>
+	<name_ru><![CDATA[Толстовки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Толстовки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Толстовки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Толстовки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[156]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:53:12]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:53:12]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Трикотажные изделия]]></full_path_ru>
+	<name_ru><![CDATA[Трикотажные изделия]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Трикотажные изделия]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Трикотажные изделия]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Трикотажные изделия]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[157]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:53:59]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:53:59]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Гетры и леггинсы]]></full_path_ru>
+	<name_ru><![CDATA[Гетры и леггинсы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Гетры и леггинсы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Гетры и леггинсы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Гетры и леггинсы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[158]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:54:35]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:54:35]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Рейтузы]]></full_path_ru>
+	<name_ru><![CDATA[Рейтузы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рейтузы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рейтузы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рейтузы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[159]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:55:26]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:55:26]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[160]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:56:08]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:56:08]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Перчатки]]></full_path_ru>
+	<name_ru><![CDATA[Перчатки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перчатки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перчатки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перчатки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[161]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:56:50]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:56:50]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Брюки]]></full_path_ru>
+	<name_ru><![CDATA[Брюки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Брюк]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Брюки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Брюки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[162]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:57:25]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:57:25]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Платья]]></full_path_ru>
+	<name_ru><![CDATA[Платья]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Платья]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Платья]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Платья]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[163]]></category_id>
+	<image/>
+	<parent_id><![CDATA[154]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:58:03]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:58:03]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Женская одежда>Шорты]]></full_path_ru>
+	<name_ru><![CDATA[Шорты]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Шорты]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Шорты]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Шорты]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[164]]></category_id>
+	<image><![CDATA[catalog/demo/banners/home4/h4-img-8.jpg]]></image>
+	<parent_id><![CDATA[106]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:58:53]]></date_added>
+	<date_modified><![CDATA[2018-12-13 09:58:06]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Детская одежда]]></full_path_ru>
+	<name_ru><![CDATA[Детская одежда]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Детская одежда]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Детская одежда]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Детская одежда]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[165]]></category_id>
+	<image/>
+	<parent_id><![CDATA[164]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 20:59:37]]></date_added>
+	<date_modified><![CDATA[2018-12-12 20:59:37]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Детская одежда>Гетры и леггинсы]]></full_path_ru>
+	<name_ru><![CDATA[Гетры и леггинсы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Гетры и леггинсы]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Гетры и леггинсы]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Гетры и леггинсы]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[166]]></category_id>
+	<image/>
+	<parent_id><![CDATA[164]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:00:16]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:00:16]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Детская одежда>Другой]]></full_path_ru>
+	<name_ru><![CDATA[Другой]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Другой]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Другой]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Другой]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[167]]></category_id>
+	<image/>
+	<parent_id><![CDATA[164]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:01:00]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:01:00]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Детская одежда>Рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[168]]></category_id>
+	<image/>
+	<parent_id><![CDATA[164]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:02:30]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:04:23]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Детская одежда>Перчатки]]></full_path_ru>
+	<name_ru><![CDATA[Перчатки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перчатки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перчатки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перчатки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[169]]></category_id>
+	<image/>
+	<parent_id><![CDATA[106]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:05:05]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:05:05]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Мужская одежда]]></full_path_ru>
+	<name_ru><![CDATA[Мужская одежда]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Мужская одежда]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Мужская одежда]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Мужская одежда]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[170]]></category_id>
+	<image/>
+	<parent_id><![CDATA[169]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:05:40]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:05:40]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Мужская одежда>Толстовки]]></full_path_ru>
+	<name_ru><![CDATA[Толстовки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Толстовки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Толстовки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Толстовки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[171]]></category_id>
+	<image/>
+	<parent_id><![CDATA[169]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:06:21]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:06:21]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Мужская одежда>Рубашки]]></full_path_ru>
+	<name_ru><![CDATA[Рубашки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Рубашки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Рубашки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Рубашки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[172]]></category_id>
+	<image/>
+	<parent_id><![CDATA[169]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:06:59]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:06:59]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Одежда>Мужская одежда>Перчатки]]></full_path_ru>
+	<name_ru><![CDATA[Перчатки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Перчатки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Перчатки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Перчатки]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[173]]></category_id>
+	<image/>
+	<parent_id><![CDATA[107]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:07:49]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:07:49]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Чулочные изделия>Лосины]]></full_path_ru>
+	<name_ru><![CDATA[Лосины]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Лосины]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Лосины]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Лосины]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[174]]></category_id>
+	<image/>
+	<parent_id><![CDATA[173]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:09:14]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:09:14]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Чулочные изделия>Лосины>Женский]]></full_path_ru>
+	<name_ru><![CDATA[Женский]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Женский]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Женский]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Женский]]></meta_keyword_ru>
+</item>
+<item>
+	<category_id><![CDATA[175]]></category_id>
+	<image/>
+	<parent_id><![CDATA[173]]></parent_id>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2018-12-12 21:09:43]]></date_added>
+	<date_modified><![CDATA[2018-12-12 21:09:43]]></date_modified>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<full_path_ru><![CDATA[Чулочные изделия>Лосины>Девочки]]></full_path_ru>
+	<name_ru><![CDATA[Девочки]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Девочки]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Девочки]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Девочки]]></meta_keyword_ru>
+</item></itemlist>

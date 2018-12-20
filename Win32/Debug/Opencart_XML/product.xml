@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<itemlist>
+<title>XML Export - 20/12/2018 19:24:31</title>
+<item>
+	<product_id><![CDATA[213]]></product_id>
+	<model><![CDATA[MODEL1]]></model>
+	<sku><![CDATA[SKU1]]></sku>
+	<upc><![CDATA[UPC1]]></upc>
+	<ean><![CDATA[EAN 1]]></ean>
+	<jan><![CDATA[JAN 1]]></jan>
+	<isbn><![CDATA[ISBN 1]]></isbn>
+	<mpn><![CDATA[MPN 1]]></mpn>
+	<location><![CDATA[Location]]></location>
+	<quantity><![CDATA[1]]></quantity>
+	<stock_status_id><![CDATA[7]]></stock_status_id>
+	<image><![CDATA[http://test2.lazarewa.com/image/catalog/demo/canon_eos_5d_1.jpg]]></image>
+	<manufacturer_id><![CDATA[9]]></manufacturer_id>
+	<shipping><![CDATA[1]]></shipping>
+	<price><![CDATA[100.0100]]></price>
+	<points><![CDATA[200]]></points>
+	<tax_class_id><![CDATA[9]]></tax_class_id>
+	<date_available><![CDATA[2018-12-20]]></date_available>
+	<weight><![CDATA[500.00000000]]></weight>
+	<weight_class_id><![CDATA[2]]></weight_class_id>
+	<length><![CDATA[20.00000000]]></length>
+	<width><![CDATA[30.00000000]]></width>
+	<height><![CDATA[40.00000000]]></height>
+	<length_class_id><![CDATA[1]]></length_class_id>
+	<subtract><![CDATA[1]]></subtract>
+	<minimum><![CDATA[1]]></minimum>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<viewed/>
+	<date_added><![CDATA[2018-12-20 14:41:10]]></date_added>
+	<date_modified><![CDATA[2018-12-20 19:20:27]]></date_modified>
+	<import_batch/>
+	<manufacturer><![CDATA[Canon]]></manufacturer>
+	<seo_keyword><![CDATA[test-tovar-1-byusgalter]]></seo_keyword>
+	<link><![CDATA[http://test2.lazarewa.com/test-tovar-1-byusgalter]]></link>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<name_ru><![CDATA[TEST товар 1 бюсгалтер]]></name_ru>
+	<fimage_ru/>
+	<video1_ru><![CDATA[Video_link]]></video1_ru>
+	<html_product_shortdesc_ru><![CDATA[<p>Short description</p>]]></html_product_shortdesc_ru>
+	<html_product_right_ru/>
+	<html_product_tab_ru><![CDATA[<p>TEST товар 1 бюсгалтер<br></p>]]></html_product_tab_ru>
+	<tab_title_ru><![CDATA[товар 1 бюсгалтер]]></tab_title_ru>
+	<description_ru><![CDATA[<p>Description</p>]]></description_ru>
+	<tag_ru><![CDATA[Product Tag 1]]></tag_ru>
+	<meta_title_ru><![CDATA[TEST 1]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Meta tag description]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Meta Keywords]]></meta_keyword_ru>
+	<additional_images><![CDATA[http://test2.lazarewa.com/image/catalog/demo/apple_cinema_30.jpg]]></additional_images>
+	<product_filter><![CDATA[assortment:szorty damskie|type:_usztywniany]]></product_filter>
+	<product_attribute/>
+	<product_option><![CDATA[select:Color:Red:+28.5500:203:1:+0.00000000:1|select:Color:Black:+28.5500:105:1:+0.00000000:1]]></product_option>
+	<product_category><![CDATA[Аксессуары>Вставки|Аксессуары>Оболочки]]></product_category>
+	<product_discount/>
+	<product_special/>
+</item>
+<item>
+	<product_id><![CDATA[214]]></product_id>
+	<model><![CDATA[MODEL111]]></model>
+	<sku/>
+	<upc/>
+	<ean/>
+	<jan/>
+	<isbn/>
+	<mpn/>
+	<location/>
+	<quantity><![CDATA[1]]></quantity>
+	<stock_status_id><![CDATA[7]]></stock_status_id>
+	<image><![CDATA[http://test2.lazarewa.com/image/catalog/demo/ipod_classic_3.jpg]]></image>
+	<manufacturer_id><![CDATA[8]]></manufacturer_id>
+	<shipping><![CDATA[1]]></shipping>
+	<price><![CDATA[1.0000]]></price>
+	<points><![CDATA[152]]></points>
+	<tax_class_id/>
+	<date_available><![CDATA[2018-12-20]]></date_available>
+	<weight><![CDATA[0.00000000]]></weight>
+	<weight_class_id><![CDATA[1]]></weight_class_id>
+	<length><![CDATA[0.00000000]]></length>
+	<width><![CDATA[0.00000000]]></width>
+	<height><![CDATA[0.00000000]]></height>
+	<length_class_id><![CDATA[1]]></length_class_id>
+	<subtract><![CDATA[1]]></subtract>
+	<minimum><![CDATA[1]]></minimum>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<viewed/>
+	<date_added><![CDATA[2018-12-20 17:52:30]]></date_added>
+	<date_modified><![CDATA[2018-12-20 19:24:11]]></date_modified>
+	<import_batch/>
+	<manufacturer><![CDATA[Apple]]></manufacturer>
+	<seo_keyword><![CDATA[test-produkt-2]]></seo_keyword>
+	<link><![CDATA[http://test2.lazarewa.com/test-produkt-2]]></link>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+	<name_ru><![CDATA[Test продукт 2]]></name_ru>
+	<fimage_ru/>
+	<video1_ru><![CDATA[Video link]]></video1_ru>
+	<html_product_shortdesc_ru><![CDATA[<p>Short description</p>]]></html_product_shortdesc_ru>
+	<html_product_right_ru/>
+	<html_product_tab_ru><![CDATA[<p>Custom tab</p>]]></html_product_tab_ru>
+	<tab_title_ru><![CDATA[Title for custom tab]]></tab_title_ru>
+	<description_ru><![CDATA[<p>Description</p>]]></description_ru>
+	<tag_ru><![CDATA[Product tags]]></tag_ru>
+	<meta_title_ru><![CDATA[Meta tag name]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Meta tag description]]></meta_description_ru>
+	<meta_keyword_ru><![CDATA[Meta tag keywords]]></meta_keyword_ru>
+	<additional_images><![CDATA[http://test2.lazarewa.com/image/catalog/demo/iphone_1.jpg|http://test2.lazarewa.com/image/catalog/demo/ipod_classic_2.jpg]]></additional_images>
+	<product_filter><![CDATA[assortment:figi|type:_push-up]]></product_filter>
+	<product_attribute/>
+	<product_option><![CDATA[select:Color:Black:+25.1000:4:1:-1.10000000:1|select:Color:Blue:+26.1000:3:1:+1.00000000:1|select:Color:Red:+28.1000:2:0:+1.20000000:1]]></product_option>
+	<product_category><![CDATA[Аксессуары>Другие|Аксессуары>Мешки для стирки]]></product_category>
+	<product_discount/>
+	<product_special/>
+</item></itemlist>

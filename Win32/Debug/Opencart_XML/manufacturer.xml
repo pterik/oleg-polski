@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<itemlist>
+<title>XML Export - 20/12/2018 18:04:56</title>
+<item>
+	<manufacturer_id><![CDATA[5]]></manufacturer_id>
+	<name><![CDATA[HTC]]></name>
+	<image><![CDATA[catalog/demo/htc_logo.jpg]]></image>
+	<sort_order/>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+</item>
+<item>
+	<manufacturer_id><![CDATA[6]]></manufacturer_id>
+	<name><![CDATA[Palm]]></name>
+	<image><![CDATA[catalog/demo/palm_logo.jpg]]></image>
+	<sort_order/>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+</item>
+<item>
+	<manufacturer_id><![CDATA[7]]></manufacturer_id>
+	<name><![CDATA[Hewlett-Packard]]></name>
+	<image><![CDATA[catalog/demo/hp_logo.jpg]]></image>
+	<sort_order/>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+</item>
+<item>
+	<manufacturer_id><![CDATA[8]]></manufacturer_id>
+	<name><![CDATA[Apple]]></name>
+	<image><![CDATA[catalog/demo/apple_logo.jpg]]></image>
+	<sort_order/>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+</item>
+<item>
+	<manufacturer_id><![CDATA[9]]></manufacturer_id>
+	<name><![CDATA[Canon]]></name>
+	<image><![CDATA[catalog/demo/canon_logo.jpg]]></image>
+	<sort_order/>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+</item>
+<item>
+	<manufacturer_id><![CDATA[10]]></manufacturer_id>
+	<name><![CDATA[Sony]]></name>
+	<image><![CDATA[catalog/demo/sony_logo.jpg]]></image>
+	<sort_order/>
+	<store><![CDATA[Тест - Сайт белья]]></store>
+</item></itemlist>

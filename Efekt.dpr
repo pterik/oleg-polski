@@ -2,13 +2,13 @@ program Efekt;
 
 uses
   Vcl.Forms,
-  UnitMain in 'UnitMain.pas' {Form2};
+  UnitMain in 'UnitMain.pas' {FormMain};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TFormMain, FormMain);
   Application.Run;
 end.

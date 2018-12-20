@@ -1,7 +1,6 @@
-object Form2: TForm2
+object FormMain: TFormMain
   Left = 0
   Top = 0
-  Caption = 'Form2'
   ClientHeight = 565
   ClientWidth = 966
   Color = clBtnFace
@@ -98,7 +97,7 @@ object Form2: TForm2
     ScrollBars = ssBoth
     TabOrder = 6
   end
-  object MemoOpen: TMemo
+  object MemoProduct: TMemo
     Left = 512
     Top = 192
     Width = 438
