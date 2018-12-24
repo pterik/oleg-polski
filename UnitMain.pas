@@ -61,6 +61,7 @@ type
     ZUpdateSQL1: TZUpdateSQL;
     MemoXML: TMemo;
     MemoProduct: TMemo;
+    ZROParameters: TZReadOnlyQuery;
     procedure IdHTTPWork(ASender: TObject; AWorkMode: TWorkMode;
       AWorkCount: Int64);
     procedure IdHTTPWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
@@ -161,54 +162,23 @@ end;
 
 procedure TFormMain.Button1Click(Sender: TObject);
 var
-//  Connection: TSQLConnection;
-  rttiContext : TRttiContext;
-  fld, fld2 : TRttiField;
-  i:integer;
-  S:UnicodeString;
-  P:TProductRec;
-//  myRec: defaults;
-  rttiType: TRttiType;
-  fields: TArray<TRttiField>;
+  Connection: TSQLConnection;
 begin
-// myRec.dims := 10;
-  P.product_id := 'PRODUCT';
-  P.Name_ru := 'JUST NAME';
-
-  (*
-  fld := rttiContext.GetType(TypeInfo(defaults)).GetField('dims');
-  i := fld.GetValue(@myRec).AsInteger;
-  fld.SetValue(@myRec, 42);
-  *)
-
-//  fld := rttiContext.GetType(TypeInfo(defaults)).GetField('st');
-//  S := fld.GetValue(@myRec).AsString;
-//  ShowMessage(S);
-//  fld.SetValue(@myRec, '42');
-
-//ClearParsedRec(R);
-//R.name:='Name';
-for fld in rttiContext.GetType(TypeInfo(TProductRec)).GetFields do
-    begin
-    fld2 := rttiContext.GetType(TypeInfo(TProductRec)).GetField(fld.Name);
-    S := fld2.GetValue(@P).AsString;
-    //fld2.SetValue(@myrec, 42);
-    MemoLog.Lines.Add('Field '+fld.Name+' = "'+S+'"');
-    end;
-
-
 // https://www.justsoftwaresolutions.co.uk/delphi/dbexpress_and_mysql_5.html
-//  Connection := TSQLConnection.Create(nil);
-//  Connection.DriverName := 'dbxmysql';
-//  Connection.GetDriverFunc := 'getSQLDriverMYSQL50';
-//  Connection.LibraryName := 'dbxopenmysql50.dll';
-//  Connection.VendorLib := 'libmysql.dll';
-//  Connection.Params.Append('Database=NAME_OF_DATABASE');
-//  Connection.Params.Append('User_Name=NAME_OF_USER');
-//  Connection.Params.Append('Password=PASSWORD');
-//  Connection.Params.Append('HostName=localhost');
-//  Connection.Open;
-//  Connection.Free;
+// Вместо него zeos
+ZConnection1.HostName := 'localhost';
+ZConnection1.Database :=  'srv52719_homeword';
+ZConnection1.User:= 'srv';
+ZConnection1.Password:='skirawroclaw';
+ZConnection1.Protocol:='mysql-5';
+try
+ZConnection1.Connected:=true;
+
+
+
+finally
+ZConnection1.Connected:=false;
+end;
 end;
 
 procedure TFormMain.ClearParsedRec(var R: TParsedRec);

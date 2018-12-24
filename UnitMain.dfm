@@ -83,7 +83,7 @@ object FormMain: TFormMain
     Top = 520
     Width = 171
     Height = 25
-    Caption = '111'
+    Caption = 'Copy to database'
     TabOrder = 5
     OnClick = Button1Click
   end
@@ -138,17 +138,17 @@ object FormMain: TFormMain
     Catalog = ''
     HostName = 'localhost'
     Port = 0
-    Database = ''
-    User = ''
-    Password = ''
-    Protocol = ''
+    Database = 'srv52719_homeword'
+    User = 'srv'
+    Password = 'skirawroclaw'
+    Protocol = 'mysql-5'
     Left = 312
     Top = 248
   end
   object ZQuery1: TZQuery
     Params = <>
-    Left = 408
-    Top = 376
+    Left = 384
+    Top = 248
   end
   object ZStoredProc1: TZStoredProc
     Params = <>
@@ -164,5 +164,10 @@ object FormMain: TFormMain
     UseSequenceFieldForRefreshSQL = False
     Left = 296
     Top = 352
+  end
+  object ZROParameters: TZReadOnlyQuery
+    Params = <>
+    Left = 376
+    Top = 344
   end
 end
