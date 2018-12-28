@@ -1,0 +1,693 @@
+<?xml version="1.0"?>
+<itemlist>
+<title>XML Export - 06/12/2018 21:44:25</title>
+<item>
+	<category_id><![CDATA[17]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order><![CDATA[4]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-03 21:08:57]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:15:11]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Софт]]></full_path_ru>
+	<name_ru><![CDATA[Софт]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Софт]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[18]]></category_id>
+	<image><![CDATA[catalog/demo/hp_2.jpg]]></image>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column/>
+	<sort_order><![CDATA[2]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-05 21:49:15]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:13:55]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Ноутбуки]]></full_path_ru>
+	<name_ru><![CDATA[Ноутбуки]]></name_ru>
+	<description_ru><![CDATA[<p>
+	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.</p>
+]]></description_ru>
+	<meta_title_ru><![CDATA[Ноутбуки]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[20]]></category_id>
+	<image><![CDATA[catalog/demo/compaq_presario.jpg]]></image>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-05 21:49:43]]></date_added>
+	<date_modified><![CDATA[2011-07-16 02:14:42]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Компьютеры]]></full_path_ru>
+	<name_ru><![CDATA[Компьютеры]]></name_ru>
+	<description_ru><![CDATA[<p>
+	Example of category description text</p>
+]]></description_ru>
+	<meta_title_ru><![CDATA[Компьютеры]]></meta_title_ru>
+	<meta_description_ru><![CDATA[Example of category description]]></meta_description_ru>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[24]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order><![CDATA[5]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-20 02:36:26]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:15:18]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Телефоны]]></full_path_ru>
+	<name_ru><![CDATA[Телефоны]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Телефоны]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[25]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order><![CDATA[3]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-31 01:04:25]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:14:55]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие]]></full_path_ru>
+	<name_ru><![CDATA[Комплектующие]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Комплектующие]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[26]]></category_id>
+	<image/>
+	<parent_id><![CDATA[20]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-31 01:55:14]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:31:45]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Компьютеры>PC]]></full_path_ru>
+	<name_ru><![CDATA[PC]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[PC]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[27]]></category_id>
+	<image/>
+	<parent_id><![CDATA[20]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[2]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-01-31 01:55:34]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:32:15]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Компьютеры>Mac]]></full_path_ru>
+	<name_ru><![CDATA[Mac]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Mac]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[28]]></category_id>
+	<image/>
+	<parent_id><![CDATA[25]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-02 13:11:12]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:32:46]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Мониторы]]></full_path_ru>
+	<name_ru><![CDATA[Мониторы]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Мониторы]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[29]]></category_id>
+	<image/>
+	<parent_id><![CDATA[25]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-02 13:11:37]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:32:39]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Манипуляторы мышь]]></full_path_ru>
+	<name_ru><![CDATA[Манипуляторы мышь]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Манипуляторы мышь]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[30]]></category_id>
+	<image/>
+	<parent_id><![CDATA[25]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-02 13:11:59]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:33:00]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Принтеры]]></full_path_ru>
+	<name_ru><![CDATA[Принтеры]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Принтеры]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[31]]></category_id>
+	<image/>
+	<parent_id><![CDATA[25]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-03 14:17:24]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:33:06]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Сканеры]]></full_path_ru>
+	<name_ru><![CDATA[Сканеры]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Сканеры]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[32]]></category_id>
+	<image/>
+	<parent_id><![CDATA[25]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order><![CDATA[1]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-03 14:17:34]]></date_added>
+	<date_modified><![CDATA[2010-08-22 06:33:12]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Веб камеры]]></full_path_ru>
+	<name_ru><![CDATA[Веб камеры]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Веб камеры]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[33]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order><![CDATA[6]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-03 14:17:55]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:15:25]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Камеры]]></full_path_ru>
+	<name_ru><![CDATA[Камеры]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Камеры]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[34]]></category_id>
+	<image><![CDATA[catalog/demo/ipod_touch_4.jpg]]></image>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[4]]></column>
+	<sort_order><![CDATA[7]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2009-02-03 14:18:11]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:15:31]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры]]></full_path_ru>
+	<name_ru><![CDATA[MP3 плееры]]></name_ru>
+	<description_ru><![CDATA[<p>
+	Shop Laptop feature only the best laptop deals on the market. By comparing laptop deals from the likes of PC World, Comet, Dixons, The Link and Carphone Warehouse, Shop Laptop has the most comprehensive selection of laptops on the internet. At Shop Laptop, we pride ourselves on offering customers the very best laptop deals. From refurbished laptops to netbooks, Shop Laptop ensures that every laptop - in every colour, style, size and technical spec - is featured on the site at the lowest possible price.</p>
+]]></description_ru>
+	<meta_title_ru><![CDATA[MP3 плееры]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[35]]></category_id>
+	<image/>
+	<parent_id><![CDATA[28]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-17 10:06:48]]></date_added>
+	<date_modified><![CDATA[2010-09-18 14:02:42]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Мониторы>test 1]]></full_path_ru>
+	<name_ru><![CDATA[test 1]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 1]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[36]]></category_id>
+	<image/>
+	<parent_id><![CDATA[28]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-17 10:07:13]]></date_added>
+	<date_modified><![CDATA[2010-09-18 14:02:55]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Комплектующие>Мониторы>test 2]]></full_path_ru>
+	<name_ru><![CDATA[test 2]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 2]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[37]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:03:39]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:55:08]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 5]]></full_path_ru>
+	<name_ru><![CDATA[test 5]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 5]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[38]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:03:51]]></date_added>
+	<date_modified><![CDATA[2010-09-18 14:03:51]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 4]]></full_path_ru>
+	<name_ru><![CDATA[test 4]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 4]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[39]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:04:17]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:55:20]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 6]]></full_path_ru>
+	<name_ru><![CDATA[test 6]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 6]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[40]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:05:36]]></date_added>
+	<date_modified><![CDATA[2010-09-18 14:05:36]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 7]]></full_path_ru>
+	<name_ru><![CDATA[test 7]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 7]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[41]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:05:49]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:55:30]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 8]]></full_path_ru>
+	<name_ru><![CDATA[test 8]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 8]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[42]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:06:34]]></date_added>
+	<date_modified><![CDATA[2010-11-07 20:31:04]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 9]]></full_path_ru>
+	<name_ru><![CDATA[test 9]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 9]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[43]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-18 14:06:49]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:55:40]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 11]]></full_path_ru>
+	<name_ru><![CDATA[test 11]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 11]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[44]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-21 15:39:21]]></date_added>
+	<date_modified><![CDATA[2010-11-07 20:30:55]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 12]]></full_path_ru>
+	<name_ru><![CDATA[test 12]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 12]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[45]]></category_id>
+	<image/>
+	<parent_id><![CDATA[18]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-24 18:29:16]]></date_added>
+	<date_modified><![CDATA[2011-04-26 08:52:11]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Ноутбуки>Windows]]></full_path_ru>
+	<name_ru><![CDATA[Windows]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Windows]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[46]]></category_id>
+	<image/>
+	<parent_id><![CDATA[18]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-09-24 18:29:31]]></date_added>
+	<date_modified><![CDATA[2011-04-26 08:52:23]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Ноутбуки>Macs]]></full_path_ru>
+	<name_ru><![CDATA[Macs]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Macs]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[47]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:13:16]]></date_added>
+	<date_modified><![CDATA[2010-11-07 11:13:16]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 15]]></full_path_ru>
+	<name_ru><![CDATA[test 15]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 15]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[48]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:13:33]]></date_added>
+	<date_modified><![CDATA[2010-11-07 11:13:33]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 16]]></full_path_ru>
+	<name_ru><![CDATA[test 16]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 16]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[49]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:14:04]]></date_added>
+	<date_modified><![CDATA[2010-11-07 11:14:04]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 17]]></full_path_ru>
+	<name_ru><![CDATA[test 17]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 17]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[50]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:14:23]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:16:01]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 18]]></full_path_ru>
+	<name_ru><![CDATA[test 18]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 18]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[51]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:14:38]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:16:13]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 19]]></full_path_ru>
+	<name_ru><![CDATA[test 19]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 19]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[52]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:16:09]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:54:57]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 20]]></full_path_ru>
+	<name_ru><![CDATA[test 20]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 20]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[53]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:28:53]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:14:36]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 21]]></full_path_ru>
+	<name_ru><![CDATA[test 21]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 21]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[54]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-07 11:29:16]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:16:50]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 22]]></full_path_ru>
+	<name_ru><![CDATA[test 22]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 22]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[55]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-08 10:31:32]]></date_added>
+	<date_modified><![CDATA[2010-11-08 10:31:32]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 23]]></full_path_ru>
+	<name_ru><![CDATA[test 23]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 23]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[56]]></category_id>
+	<image/>
+	<parent_id><![CDATA[34]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2010-11-08 10:31:50]]></date_added>
+	<date_modified><![CDATA[2011-04-22 01:16:37]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 24]]></full_path_ru>
+	<name_ru><![CDATA[test 24]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 24]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[57]]></category_id>
+	<image/>
+	<parent_id/>
+	<top><![CDATA[1]]></top>
+	<column><![CDATA[1]]></column>
+	<sort_order><![CDATA[3]]></sort_order>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2011-04-26 08:53:16]]></date_added>
+	<date_modified><![CDATA[2011-05-30 12:15:05]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[Планшеты]]></full_path_ru>
+	<name_ru><![CDATA[Планшеты]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[Планшеты]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item>
+<item>
+	<category_id><![CDATA[58]]></category_id>
+	<image/>
+	<parent_id><![CDATA[52]]></parent_id>
+	<top/>
+	<column/>
+	<sort_order/>
+	<status><![CDATA[1]]></status>
+	<date_added><![CDATA[2011-05-08 13:44:16]]></date_added>
+	<date_modified><![CDATA[2011-05-08 13:44:16]]></date_modified>
+	<store><![CDATA[Интернет магазин Opencart "Русская сборка"]]></store>
+	<full_path_ru><![CDATA[MP3 плееры>test 20>test 25]]></full_path_ru>
+	<name_ru><![CDATA[test 25]]></name_ru>
+	<description_ru/>
+	<meta_title_ru><![CDATA[test 25]]></meta_title_ru>
+	<meta_description_ru/>
+	<meta_keyword_ru/>
+</item></itemlist>

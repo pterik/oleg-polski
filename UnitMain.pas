@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.DateUtils, System.Variants,
-  System.Classes,System.IOUtils, System.Rtti,
+  System.Classes,System.IOUtils, System.Rtti, System.IniFiles,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls,
   IdBaseComponent, IdComponent, IdTCPConnection, IdTCPClient, IdHTTP,
   IdIOHandler, IdIOHandlerStream, Data.DBXOdbc, Data.FMTBcd, Data.SqlExpr,
@@ -13,8 +13,8 @@ uses
   FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MySQL, FireDAC.Phys.MySQLDef,
   FireDAC.VCLUI.Wait, FireDAC.Comp.Client, Data.DBXMySQL, FireDAC.Phys.TDBXDef,
   FireDAC.Phys.TDBXBase, FireDAC.Phys.TDBX, Data.DBXPool, Data.DBXTrace,
-  Data.DBXMSSQL, ZSqlUpdate, ZSqlMonitor, ZStoredProcedure, ZAbstractRODataset,
-  ZAbstractDataset, ZDataset, ZAbstractConnection, ZConnection;
+  Data.DBXMSSQL, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt,
+  FireDAC.Comp.DataSet;
 
 const CRLF=chr($0D)+chr($0A);
 
@@ -25,70 +25,73 @@ defaults = record
 
 type
 TParsedRec = record
-  sku, ean, description, name, color,
-  size, qty, price, assortment, product_type,
-  manufacturer, category, image1, image2:UnicodeString;
+  sku, ean, description_pol, name_pol, color_pol,
+  size, qty, price, assortment_pol, product_type_pol,
+  manufacturer_pol, category_pol, image1, image2:UnicodeString;
 end;
 TProductRec = record
  product_id, model, sku, upc, ean, jan,
  isbn, mpn, location, quantity, stock_status_id,
- image, manufacturer, manufacturer_id, shipping, price, points,
+ image, manufacturer_ru, manufacturer_pol, manufacturer_id, shipping, price, points,
  tax_class_id, date_available, weight, weight_class_id, length,
  width, height, length_class_id, subtract, minimum,
  sort_order, status, viewed, date_added, date_modified,
  import_batch, seo_keyword, link, store,
- name_ru, fimage_ru, video1_ru, html_product_shortdesc_ru, html_product_right_ru,
- html_product_tab_ru, tab_title_ru, description_ru, tag_ru,
+ name_ru, name_pol, fimage_ru, video1_ru, html_product_shortdesc_ru, html_product_right_ru,
+ html_product_tab_ru, tab_title_ru, description_ru, description_pol, tag_ru,
  meta_title_ru, meta_description_ru, meta_keyword_ru, additional_images, product_filter,
  product_attribute, product_option, product_category, product_discount, product_special:UnicodeString;
 end;
 type
   TFormMain = class(TForm)
-    BitBtn1: TBitBtn;
+    BitBtnConvertXML: TBitBtn;
     BitBtn2: TBitBtn;
     MemoLog: TMemo;
     OD: TOpenDialog;
     BitBtnGetXML: TBitBtn;
     IdHTTP: TIdHTTP;
-    ProgressBar1: TProgressBar;
-    Button1: TButton;
+    PB: TProgressBar;
+    ButtonCopyToDB: TButton;
     Label1: TLabel;
     Label2: TLabel;
-    ZConnection1: TZConnection;
-    ZQuery1: TZQuery;
-    ZStoredProc1: TZStoredProc;
-    ZSQLMonitor1: TZSQLMonitor;
-    ZUpdateSQL1: TZUpdateSQL;
     MemoXML: TMemo;
     MemoProduct: TMemo;
-    ZROParameters: TZReadOnlyQuery;
+    SP_Save_Product: TFDStoredProc;
+    FDQuery1: TFDQuery;
+    FDCon: TFDConnection;
     procedure IdHTTPWork(ASender: TObject; AWorkMode: TWorkMode;
       AWorkCount: Int64);
     procedure IdHTTPWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
       AWorkCountMax: Int64);
     procedure BitBtnGetXMLClick(Sender: TObject);
     procedure IdHTTPWorkEnd(ASender: TObject; AWorkMode: TWorkMode);
-    procedure BitBtn1Click(Sender: TObject);
-    procedure Button1Click(Sender: TObject);
+    procedure BitBtnConvertXMLClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure ButtonCopyToDBClick(Sender: TObject);
   private
   isFileTransferred:boolean;
   ProgramDir:string;
   public
+  FS:TFormatSettings;
+  SiteUsername, SitePassword, SiteAddress:string;
   procedure Log(Msg:string);
   function GetXMLFile(FileName:string):boolean;
   procedure ConvertXMLToOpenCart(XMLName:string);
+  procedure SaveXMLToDatabase(XMLName:string);
   procedure ParseLine(var R:TParsedRec; const S:UnicodeString);
-  function SaveProduct(P:TProductRec):UnicodeString;
+  function  SaveProduct(P:TProductRec):UnicodeString;
   procedure FindTag(const S:UnicodeString; const Tag:UnicodeString; var TagValue:UnicodeString);
-  function SaveTag(TagName, TagValue:UnicodeString):UnicodeString;
-  function ReplaceHTMLSymbols(const S:UnicodeString):Unicodestring;
+  function  SaveTag(TagName, TagValue:UnicodeString):UnicodeString;
+  function  ReplaceHTMLSymbols(const S:UnicodeString):Unicodestring;
   procedure ClearParsedRec(var R:TParsedRec);
   procedure ClearProductRec(var W:TProductRec);
   procedure CopyRecords(R:TParsedRec; var P:TProductRec);
-  function Replace_Manufacture_ID(Name:UnicodeString):UnicodeString;
-  function Replace_Manufacture(Name:UnicodeString):UnicodeString;
-  function Replace_Category(CatName:UnicodeString):UnicodeString;
-  function Replace_Color(ColorName:UnicodeString):UnicodeString;
+  function  Replace_Manufacturer_ID(Name:UnicodeString):UnicodeString;
+  function  Replace_Manufacturer(Name:UnicodeString):UnicodeString;
+  function  Replace_Category(CatName:UnicodeString):UnicodeString;
+  function  Replace_Color(ColorName:UnicodeString):UnicodeString;
+  function  SaveRecToDB(P: TParsedRec): boolean;
+  function  PosR2L(const FindS, SrcS: UnicodeString): Integer;
   end;
 
 var
@@ -98,7 +101,7 @@ implementation
 
 {$R *.dfm}
 
-procedure TFormMain.BitBtn1Click(Sender: TObject);
+procedure TFormMain.BitBtnConvertXMLClick(Sender: TObject);
 var XMLName:string;
  Year, Month, Day: Word;
 GotIt:boolean;
@@ -114,8 +117,7 @@ if FileExists(XMLName)
     else Log('Невозможно скачать файл, отмена обработки '+XMLName);
     exit;
     end;
-//ConvertXMLToOpenCart(XMLName);
-ConvertXMLToOpenCart('20181219 — cutted.xml');
+ConvertXMLToOpenCart(XMLName);
 end;
 
 procedure TFormMain.BitBtnGetXMLClick(Sender: TObject);
@@ -137,7 +139,12 @@ if FindFirst(ProgramDir+'\get*.xml', FaAnyFile, sr)=0 then
     Log('Файл '+sr.Name+ ' удалён');
     until Findnext(sr)<>0;
 FindClose(sr);
-if not GetXMLFile(ExtractFilepath(Paramstr(0))+'get.xml') then exit;
+if not GetXMLFile(ExtractFilepath(Paramstr(0))+'get.xml') then
+  begin
+  Log('Не могу получить файл');
+  ShowMessage('Не могу получить файл');
+  exit;
+  end;
 try
   DecodeDate(Now(), Year, Month, Day);
   XMLName:=ExtractFilepath(Paramstr(0))+'get-'+IntToStr(Year)+IntToStr(Month)+IntToStr(Day)+'.xml';
@@ -146,9 +153,9 @@ try
   FGetStream := TFileStream.Create(GetName, fmOpenRead);
   SetLength(S, FGetStream.Size);
   FGetStream.ReadBuffer(S[1], FGetStream.Size);
-  S:=StringReplace(S, '</product>','</product>'+Char($0D)+Char($0A),[rfReplaceAll, rfIgnoreCase]);
-  S:=StringReplace(S, '&lt;', '<', [rfReplaceAll, rfIgnoreCase]);
-  S:=StringReplace(S, '&gt;', '>', [rfReplaceAll, rfIgnoreCase]);
+  S:=StringReplace(S, UnicodeString('</product>'),UnicodeString('</product>'+Char($0D)+Char($0A)),[rfReplaceAll, rfIgnoreCase]);
+  S:=StringReplace(S, UnicodeString('&lt;'), UnicodeString('<'), [rfReplaceAll, rfIgnoreCase]);
+  S:=StringReplace(S, UnicodeString('&gt;'), UnicodeString('>'), [rfReplaceAll, rfIgnoreCase]);
 //  S:=StringReplace(S, '<![CDATA[', '', [rfReplaceAll, rfIgnoreCase]);
 //  S:=StringReplace(S, ']]>', '', [rfReplaceAll, rfIgnoreCase]);
   FXMLStream.WriteBuffer(S[1], Length(S));
@@ -156,45 +163,47 @@ try
     FXMLStream.Free;
     FGetStream.Free;
   end;
-if FileExists(GetName) then begin DeleteFile(GetName); Sleep(1000);end;
+//if FileExists(GetName) then begin DeleteFile(GetName); Sleep(1000);end;
 Log('Создаём новые файлы для загрузки ');
 end;
 
-procedure TFormMain.Button1Click(Sender: TObject);
-var
-  Connection: TSQLConnection;
+procedure TFormMain.ButtonCopyToDBClick(Sender: TObject);
+var XMLName:string;
+ Year, Month, Day: Word;
+GotIt:boolean;
 begin
-// https://www.justsoftwaresolutions.co.uk/delphi/dbexpress_and_mysql_5.html
-// Вместо него zeos
-ZConnection1.HostName := 'localhost';
-ZConnection1.Database :=  'srv52719_homeword';
-ZConnection1.User:= 'srv';
-ZConnection1.Password:='skirawroclaw';
-ZConnection1.Protocol:='mysql-5';
-try
-ZConnection1.Connected:=true;
-
-
-
-finally
-ZConnection1.Connected:=false;
-end;
+DecodeDate(Now(), Year, Month, Day);
+XMLName:=ExtractFilepath(Paramstr(0))+'get-'+IntToStr(Year)+IntToStr(Month)+IntToStr(Day)+'.xml';
+if FileExists(XMLName)
+  then
+    begin
+    Log('Обрабатываем '+XMLName);
+    SaveXMLToDatabase(XMLName);
+    end
+  else
+    begin
+    Log('Скачиваю файл '+XMLName);
+    GotIt:=GetXMLFile(ExtractFilepath(Paramstr(0))+'get.xml');
+//    if GotIt then Log('Обрабатываем '+XMLName)
+//    else Log('Невозможно скачать файл, отмена обработки '+XMLName);
+    exit;
+    end;
 end;
 
 procedure TFormMain.ClearParsedRec(var R: TParsedRec);
 begin
 R.sku:='';
 R.ean:='';
-R.description:='';
-R.name:='';
-R.color:='';
+R.description_pol:='';
+R.name_pol:='';
+R.color_pol:='';
 R.size:='';
 R.qty:='';
 R.price:='';
-R.assortment:='';
-R.product_type:='';
-R.manufacturer:='';
-R.category:='';
+R.assortment_pol:='';
+R.product_type_pol:='';
+R.manufacturer_pol:='';
+R.category_pol:='';
 R.image1:='';
 R.image2:='';
 end;
@@ -233,7 +242,8 @@ W.viewed:='';
 W.date_added:='';
 W.date_modified:='';
 W.import_batch:='';
-W.manufacturer:='';
+W.manufacturer_pol:='';
+W.manufacturer_ru:='';
 W.seo_keyword:='';
 W.link:='';
 W.store:='';
@@ -265,7 +275,6 @@ var OpenName:String;
  FXMLtext :TextFile;
  R:TParsedRec;
  P:TProductRec;
- FS:TFormatSettings;
 begin
 OpenName:=StringReplace(XMLName, '.xml', '_oc.xml', [rfIgnoreCase]);
 try
@@ -275,7 +284,6 @@ FileMode:=0;
 Reset(FXMLText);
 FileMode:=2;
 Rewrite(FOpenText);
-FS:=TFormatSettings.Create('en-US');
 Writeln(FOpentext, '<?xml version="1.0"?> <itemlist> <title>XML Export - '+DateTimeToStr(Now, FS)+' </title>');
 while not EOF(FXMLText) do
   begin
@@ -304,11 +312,9 @@ end;
 
 procedure TFormMain.CopyRecords(R: TParsedRec; var P: TProductRec);
 var quantity:real;
-FS:TFormatSettings;
 begin
 P.sku:=R.sku;
 P.ean:=R.ean;
-FS:=TFormatSettings.Create('en-US');
 Quantity:=StrToFloatDef(R.qty, 0, FS);
 if Quantity>0
 then
@@ -321,20 +327,21 @@ else
   p.quantity:='0';
   p.status := '';
   end;
-p.description_ru:=r.description;
-p.name_ru:=r.name;
+p.description_pol:=r.description_pol;
+p.name_pol:=r.name_pol;
 p.price:=r.price;
 p.image:=r.image1;
 p.additional_images:=r.image2;
 p.date_available:=DateTimeToStr(Now, FS);
 p.date_added:='';
 p.date_modified:=DateTimeToStr(Now, FS);
-p.manufacturer_id:=Replace_Manufacture_ID(r.manufacturer);
-p.manufacturer:=Replace_Manufacture(r.manufacturer);
+p.manufacturer_pol:=r.manufacturer_pol;
+p.manufacturer_id:=Replace_Manufacturer_ID(r.manufacturer_pol);
+p.manufacturer_ru:=Replace_Manufacturer(r.manufacturer_pol);
 p.product_filter:=''; //TODO: Закончить фильтр
 p.product_attribute:=''; //TODO: Закончить атрибуты
-p.product_option:=Replace_Color(r.color)+':'+r.price+':'+'+'+r.qty+':0:+0.00000000:1';
-p.product_category:=Replace_Category(r.category);
+p.product_option:=Replace_Color(r.color_pol)+':'+r.price+':'+'+'+r.qty+':0:+0.00000000:1';
+p.product_category:=Replace_Category(r.category_pol);
 // Исходный
 //  sku, ean, description, name, color,
 //  size, qty, price, assortment, product_type,
@@ -346,7 +353,48 @@ p.product_category:=Replace_Category(r.category);
 //  select:Color:Red:+28.1000:2:0:+1.20000000:1
 // Color Red: Price +28.100: Quantity 2: Stock 0: Weight 1.2 : Unknown 1
 
-MemoProduct.Lines.Add('Запись скопирована: '+R.Name);
+MemoProduct.Lines.Add('Запись скопирована: '+R.Name_pol);
+end;
+
+procedure TFormMain.SaveXMLToDatabase(XMLName: string);
+var
+ S:UnicodeString;
+ FXMLtext :TextFile;
+ R:TParsedRec;
+ Err_cntr:integer;
+begin
+PB.Position:=0;
+try
+AssignFile(FXMLText, XMLName);
+FileMode:=0;
+Reset(FXMLText);
+FileMode:=2;
+while not EOF(FXMLText) do
+  begin
+  Readln(FXMLText, S);
+  S:=StringReplace(S, '<![CDATA[', '', [rfReplaceAll, rfIgnoreCase]);
+  S:=StringReplace(S, ']]>', '', [rfReplaceAll, rfIgnoreCase]);
+  MemoXML.Lines.Add(S);
+  if Pos('xml version=', S) >0 then continue;
+  if Pos('</products>', S) >0 then continue;
+  if (Pos('<product>', S) >0) and (Pos('</product>', S)>0) then
+    begin
+    ClearParsedRec(R);
+    ParseLine(R, S);
+    Err_Cntr:=0;
+    if not SaveRecToDB(R) then
+      begin
+        inc(Err_cntr);
+        if Err_Cntr<5 then Log('Ошибка записи №' +IntToStr(Err_Cntr)+' не могу записать в базу "'+R.name_pol+'"');
+      end
+      else Log('Запись в базу name="'+R.name_pol+'"');
+    end;
+  PB.StepIt;
+  end;
+finally
+    CloseFile(FXMLtext);
+  end;
+PB.Position:=PB.Max;
 end;
 
 procedure TFormMain.FindTag(const S:UnicodeString; const Tag:UnicodeString;  var TagValue:UnicodeString);
@@ -367,6 +415,43 @@ if (Pos(Tag1, lowercase(S))>0) and  (Pos(Tag2, lowercase(S))>0) then
   else TagValue:='';
 end;
 
+procedure TFormMain.FormCreate(Sender: TObject);
+var Ini:TINIFile;
+I:integer;
+Database, UserNAme, Host, Password, Port, DriverID:string;
+begin
+FS:=TFormatSettings.Create('en-US');
+Ini:=TiniFile.Create(ExtractFilePath(paramstr(0))+'parameters.ini');
+// SourceWebsite
+SiteUsername:=Ini.ReadString('SourceWebsite','SiteUsername','admin');
+SitePassword:=Ini.ReadString('SourceWebsite','SitePassword','skirawroclaw');
+SiteAddress:=Ini.ReadString('SourceWebsite','SiteAddress','http://pro101.golddragon.info/data/get.xml');
+Log('SiteUsername ='+SiteUserName);
+Log('SitePassword='+SitePassword);
+Log('SiteAddress ='+SiteAddress);
+DriverID:=Ini.ReadString('MySQLDB','DriverID','MYSQL');
+Host:=Ini.ReadString('MySQLDB','Host','localhost');
+Database:=Ini.ReadString('MySQLDB','Database','');
+Username:=Ini.ReadString('MySQLDB','UserName','');
+Password:=Ini.ReadString('MySQLDB','Password','');
+Port:=Ini.ReadString('MySQLDB','Port','3306');
+Log('DriverID='+DriverID);
+Log('Host='+Host);
+Log('Database='+Database);
+Log('Username='+UserName);
+Log('Password='+Password);
+Log('Port='+Port);
+Ini.Free;
+//FDCon.Params.Clear;
+//FDCon.Params.Add('DriverID='+DriverID);
+FDCon.Params.Add('Server='+Host);
+FDCon.Params.Add('Database='+Database);
+FDCon.Params.Add('User='+UserName);
+FDCon.Params.Add('Password='+Password);
+FDCon.Params.Add('Port='+Port);
+FDCon.Open;
+end;
+
 function TFormMain.GetXMLFile(FileName: string): boolean;
 var  FGetStream:TFileStream;
 begin
@@ -375,9 +460,9 @@ isFileTransferred:=false;
 try
 Log('Подключаемся....');
 idHTTP.Request.BasicAuthentication:=true;
-idHTTP.Request.Username:='admin';
-idHTTP.Request.Password:='skirawroclaw';
-IdHTTP.Get('http://pro101.golddragon.info/data/get.xml', FGetStream);
+idHTTP.Request.Username:=SiteUserName;
+idHTTP.Request.Password:=SitePassword;
+IdHTTP.Get(SiteAddress, FGetStream);
 except on E:Exception do
   begin
   Log('Ошибка при получении XML файла, не могу связаться с сайтом-источником '+E.Message);
@@ -401,14 +486,14 @@ end;
 procedure TFormMain.IdHTTPWork(ASender: TObject; AWorkMode: TWorkMode;
   AWorkCount: Int64);
 begin
- ProgressBar1.Position := AWorkCount;
+ PB.Position := AWorkCount;
 end;
 
 procedure TFormMain.IdHTTPWorkBegin(ASender: TObject; AWorkMode: TWorkMode;
   AWorkCountMax: Int64);
 begin
-ProgressBar1.Position := 0;
-ProgressBar1.Max := AWorkcountMax;
+PB.Position := 0;
+PB.Max := AWorkcountMax;
 end;
 
 procedure TFormMain.IdHTTPWorkEnd(ASender: TObject; AWorkMode: TWorkMode);
@@ -422,25 +507,68 @@ MemoLog.Lines.Add(Msg);
 end;
 
 procedure TFormMain.ParseLine(var R: TParsedRec; const S: UnicodeString);
-var Str:UnicodeString;
+var Str, LastRpl:UnicodeString;
 begin
 Str:=ReplaceHTMLSymbols(S);
 Str:=StringReplace(Str,UnicodeString('<products>'), '',[rfReplaceAll, rfIgnoreCase]);
 Str:=StringReplace(Str,UnicodeString('</products>'), '',[rfReplaceAll, rfIgnoreCase]);
 FindTag(Str, 'sku', r.sku);
 FindTag(Str, 'ean', r.ean);
-FindTag(Str, 'description', r.description);
-FindTag(Str, 'name', r.name);
-FindTag(Str, 'color', r.color);
+FindTag(Str, 'description', r.description_pol);
+FindTag(Str, 'name', r.name_pol);
+FindTag(Str, 'color', r.color_pol);
 FindTag(Str, 'size', r.size);
 FindTag(Str, 'qty', r.qty);
 FindTag(Str, 'price', r.price);
-FindTag(Str, 'assortment', r.assortment);
-FindTag(Str, 'type', r.product_type);
-FindTag(Str, 'manufacturer', r.manufacturer);
-FindTag(Str, 'category', r.category);
+FindTag(Str, 'assortment', r.assortment_pol);
+FindTag(Str, 'type', r.product_type_pol);
+FindTag(Str, 'manufacturer', r.manufacturer_pol);
+FindTag(Str, 'category', r.category_pol);
 FindTag(Str, 'image1', r.image1);
 FindTag(Str, 'image2', r.image2);
+if PosR2L(r.color_pol,r.name_pol)>0
+  then r.name_pol:=trim(Copy(r.name_pol, 1, PosR2L(r.color_pol,r.name_pol)-1));
+if PosR2L(r.size,r.name_pol)>0
+  then r.name_pol:=trim(Copy(r.name_pol, 1, PosR2L(r.size,r.name_pol)-1));
+end;
+
+function TFormMain.PosR2L(const FindS, SrcS: UnicodeString): Integer;
+{Функция возвращает начало последнего вхождения
+ подстроки FindS в строку SrcS, т.е. первое с конца.
+ Если возвращает ноль, то подстрока не найдена.
+ Можно использовать в текстовых редакторах
+ при поиске текста вверх от курсора ввода.}
+
+  function InvertS(const S: UnicodeString): UnicodeString;
+    {Инверсия строки S}
+  var
+    i, Len: Integer;
+  begin
+    Len := Length(S);
+    SetLength(Result, Len);
+    for i := 1 to Len do
+      Result[i] := S[Len - i + 1];
+  end;
+
+var
+  ps: Integer;
+begin
+  {Например: нужно найти последнее вхождение
+   строки 'ро' в строке 'пирожок в коробке'.
+   Инвертируем обе строки и получаем
+     'ор' и 'екборок в кожорип',
+   а затем ищем первое вхождение с помощью стандартной
+   функции Pos(Substr, S: string): string;
+   Если подстрока Substr есть в строке S, то
+   эта функция возвращает позицию первого вхождения,
+   а иначе возвращает ноль.}
+  ps := Pos(InvertS(FindS), InvertS(SrcS));
+  {Если подстрока найдена определяем её истинное положение
+   в строке, иначе возвращаем ноль}
+  if ps <> 0 then
+    Result := Length(SrcS) - Length(FindS) - ps + 2
+  else
+    Result := 0;
 end;
 
 function TFormMain.ReplaceHTMLSymbols(const S: UnicodeString):UnicodeString;
@@ -515,7 +643,7 @@ begin
 Result:='Black';
 end;
 
-function TFormMain.Replace_Manufacture(Name: UnicodeString): UnicodeString;
+function TFormMain.Replace_Manufacturer(Name: UnicodeString): UnicodeString;
 begin
 // todo: Заменить Название производителя на польском языке на цифровой номер из русской таблицы
 // соответствие ищем в manufacturer.xml
@@ -523,20 +651,48 @@ Result:='Canon';
 
 end;
 
-function TFormMain.Replace_Manufacture_ID(Name: UnicodeString): UnicodeString;
+function TFormMain.Replace_Manufacturer_ID(Name: UnicodeString): UnicodeString;
 begin
 // todo: Заменить Название производителя на польском языке на цифровой номер из русской таблицы
 // соответствие ищем в manufacturer.xml
 Result:='9';
 end;
 
+function TFormMain.SaveRecToDB(P: TParsedRec): boolean;
+begin
+Try
+with SP_Save_Product do
+  begin
+  Params[0].AsString:=P.name_pol;
+  Params[1].AsString:=P.sku;
+  Params[2].AsString:=P.ean;
+  Params[3].AsString:=P.description_pol;
+  Params[4].AsString:=P.Assortment_pol;
+  Params[5].AsString:=p.product_type_pol;
+  Params[6].AsString:=P.manufacturer_pol;
+  Params[7].AsString:=P.category_pol;
+  Params[8].AsString:=p.color_pol;
+  Params[9].AsString:=P.Size;
+  Params[10].AsString:=P.qty;
+  Params[11].AsString:=P.price;
+  Params[12].AsString:=P.image1;
+  Params[13].AsString:=P.image2;
+  end;
+//FDConn.StartTransaction;
+  //ParamCheck:=true;
+  //Prepare;
+SP_Save_product.Execute;
+Result:=true;
+except on E:Exception do Result:=false;
+end;
+end;
+
 function TFormMain.SaveProduct(P: TProductRec):UnicodeString;
 var S:UnicodeString;
- FS:TFormatSettings;
  rttiContext : TRttiContext;
  fld, fld2 : TRttiField;
 begin
-FS:=TFormatSettings.Create('en-US');
+
 S:='<item> '+CRLF;
 
 for fld in rttiContext.GetType(TypeInfo(TProductRec)).GetFields do

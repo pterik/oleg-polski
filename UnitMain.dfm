@@ -1,8 +1,8 @@
 object FormMain: TFormMain
   Left = 0
   Top = 0
-  ClientHeight = 565
-  ClientWidth = 966
+  ClientHeight = 627
+  ClientWidth = 1108
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -10,9 +10,10 @@ object FormMain: TFormMain
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   DesignSize = (
-    966
-    565)
+    1108
+    627)
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -29,9 +30,9 @@ object FormMain: TFormMain
     Height = 13
     Caption = 'Label2'
   end
-  object BitBtn1: TBitBtn
-    Left = 200
-    Top = 520
+  object BitBtnConvertXML: TBitBtn
+    Left = 224
+    Top = 594
     Width = 145
     Height = 25
     Anchors = [akLeft, akBottom]
@@ -39,11 +40,11 @@ object FormMain: TFormMain
     Kind = bkRetry
     NumGlyphs = 2
     TabOrder = 0
-    OnClick = BitBtn1Click
+    OnClick = BitBtnConvertXMLClick
   end
   object BitBtn2: TBitBtn
-    Left = 864
-    Top = 520
+    Left = 1025
+    Top = 594
     Width = 75
     Height = 25
     Anchors = [akRight, akBottom]
@@ -54,14 +55,14 @@ object FormMain: TFormMain
   object MemoLog: TMemo
     Left = 8
     Top = 8
-    Width = 942
-    Height = 169
+    Width = 1092
+    Height = 245
     ScrollBars = ssBoth
     TabOrder = 2
   end
   object BitBtnGetXML: TBitBtn
-    Left = 32
-    Top = 520
+    Left = 8
+    Top = 594
     Width = 153
     Height = 25
     Anchors = [akLeft, akBottom]
@@ -71,26 +72,27 @@ object FormMain: TFormMain
     TabOrder = 3
     OnClick = BitBtnGetXMLClick
   end
-  object ProgressBar1: TProgressBar
-    Left = 32
-    Top = 472
-    Width = 907
+  object PB: TProgressBar
+    Left = 8
+    Top = 559
+    Width = 1092
     Height = 17
     TabOrder = 4
   end
-  object Button1: TButton
-    Left = 456
-    Top = 520
+  object ButtonCopyToDB: TButton
+    Left = 553
+    Top = 594
     Width = 171
     Height = 25
+    Anchors = [akRight, akBottom]
     Caption = 'Copy to database'
     TabOrder = 5
-    OnClick = Button1Click
+    OnClick = ButtonCopyToDBClick
   end
   object MemoXML: TMemo
     Left = 8
-    Top = 192
-    Width = 489
+    Top = 277
+    Width = 577
     Height = 265
     Lines.Strings = (
       'MemoXML')
@@ -98,9 +100,9 @@ object FormMain: TFormMain
     TabOrder = 6
   end
   object MemoProduct: TMemo
-    Left = 512
-    Top = 192
-    Width = 438
+    Left = 603
+    Top = 277
+    Width = 497
     Height = 265
     ScrollBars = ssBoth
     TabOrder = 7
@@ -133,41 +135,127 @@ object FormMain: TFormMain
     Left = 40
     Top = 320
   end
-  object ZConnection1: TZConnection
-    ControlsCodePage = cCP_UTF16
-    Catalog = ''
-    HostName = 'localhost'
-    Port = 0
-    Database = 'srv52719_homeword'
-    User = 'srv'
-    Password = 'skirawroclaw'
-    Protocol = 'mysql-5'
-    Left = 312
-    Top = 248
+  object SP_Save_Product: TFDStoredProc
+    Connection = FDCon
+    StoredProcName = 'srv52719_homeword.export_products_pol'
+    Left = 192
+    Top = 32
+    ParamData = <
+      item
+        Position = 1
+        Name = 'p_name_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 2
+        Name = 'p_sku'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 3
+        Name = 'p_ean'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 4
+        Name = 'p_description_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 500
+      end
+      item
+        Position = 5
+        Name = 'p_assortment_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 6
+        Name = 'p_type_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 7
+        Name = 'p_manufacturer_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 8
+        Name = 'p_category_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 9
+        Name = 'p_color_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 10
+        Name = 'p_size_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 11
+        Name = 'p_qty'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 12
+        Name = 'p_price'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 13
+        Name = 'p_image1'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 14
+        Name = 'p_image2'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end>
   end
-  object ZQuery1: TZQuery
-    Params = <>
-    Left = 384
-    Top = 248
+  object FDQuery1: TFDQuery
+    Connection = FDCon
+    SQL.Strings = (
+      'select * from mysql.user')
+    Left = 112
+    Top = 32
   end
-  object ZStoredProc1: TZStoredProc
-    Params = <>
-    Left = 680
-    Top = 272
-  end
-  object ZSQLMonitor1: TZSQLMonitor
-    MaxTraceCount = 100
-    Left = 832
-    Top = 280
-  end
-  object ZUpdateSQL1: TZUpdateSQL
-    UseSequenceFieldForRefreshSQL = False
-    Left = 296
-    Top = 352
-  end
-  object ZROParameters: TZReadOnlyQuery
-    Params = <>
-    Left = 376
-    Top = 344
+  object FDCon: TFDConnection
+    Params.Strings = (
+      'DriverID=MySQL'
+      'Server=localhost'
+      'User_Name=srv2'
+      'Password=skirawroclaw'
+      'Database=srv52719_homeword')
+    LoginPrompt = False
+    Left = 32
+    Top = 32
   end
 end

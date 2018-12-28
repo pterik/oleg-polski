@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.772,D:\Projects\Oleg-polski\Delphi_source\UnitMain.pas=C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.527,D:\Projects\Oleg-polski\Delphi_source\Efekt.dproj=C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.772,D:\Projects\Oleg-polski\Delphi_source\UnitMain.dfm=C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.838,=C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.527,C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Project2.dproj=D:\Projects\Oleg-polski\Delphi_source\Efekt.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.dfm=D:\Projects\Oleg-polski\Delphi_source\UnitMain.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.729,=C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.772,C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.pas=D:\Projects\Oleg-polski\Delphi_source\UnitMain.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.838,=C:\Users\vital\OneDrive\Мои документы\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
   </Transactions>
 </BorlandProject>

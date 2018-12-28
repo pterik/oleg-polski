@@ -1,0 +1,267 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  ClientHeight = 627
+  ClientWidth = 1108
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  DesignSize = (
+    1108
+    627)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 56
+    Top = 240
+    Width = 31
+    Height = 13
+    Caption = 'Label1'
+  end
+  object Label2: TLabel
+    Left = 56
+    Top = 280
+    Width = 31
+    Height = 13
+    Caption = 'Label2'
+  end
+  object BitBtnConvertXML: TBitBtn
+    Left = 184
+    Top = 582
+    Width = 145
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Caption = '&Convert XML file'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 0
+    OnClick = BitBtnConvertXMLClick
+    ExplicitTop = 417
+  end
+  object BitBtn2: TBitBtn
+    Left = 990
+    Top = 582
+    Width = 75
+    Height = 25
+    Anchors = [akRight, akBottom]
+    Kind = bkClose
+    NumGlyphs = 2
+    TabOrder = 1
+    ExplicitLeft = 815
+    ExplicitTop = 417
+  end
+  object MemoLog: TMemo
+    Left = 8
+    Top = 8
+    Width = 1092
+    Height = 245
+    ScrollBars = ssBoth
+    TabOrder = 2
+  end
+  object BitBtnGetXML: TBitBtn
+    Left = 8
+    Top = 582
+    Width = 153
+    Height = 25
+    Anchors = [akLeft, akBottom]
+    Caption = 'Get XML from website'
+    Kind = bkOK
+    NumGlyphs = 2
+    TabOrder = 3
+    OnClick = BitBtnGetXMLClick
+    ExplicitTop = 417
+  end
+  object PB: TProgressBar
+    Left = 8
+    Top = 559
+    Width = 1092
+    Height = 17
+    TabOrder = 4
+  end
+  object ButtonCopyToDB: TButton
+    Left = 553
+    Top = 582
+    Width = 171
+    Height = 25
+    Anchors = [akRight, akBottom]
+    Caption = 'Copy to database'
+    TabOrder = 5
+    OnClick = ButtonCopyToDBClick
+    ExplicitLeft = 378
+    ExplicitTop = 417
+  end
+  object MemoXML: TMemo
+    Left = 8
+    Top = 277
+    Width = 577
+    Height = 265
+    Lines.Strings = (
+      'MemoXML')
+    ScrollBars = ssBoth
+    TabOrder = 6
+  end
+  object MemoProduct: TMemo
+    Left = 603
+    Top = 277
+    Width = 497
+    Height = 265
+    ScrollBars = ssBoth
+    TabOrder = 7
+  end
+  object OD: TOpenDialog
+    DefaultExt = '*.xml'
+    Filter = 'XML files|*.xml'
+    Left = 88
+    Top = 376
+  end
+  object IdHTTP: TIdHTTP
+    OnWork = IdHTTPWork
+    OnWorkBegin = IdHTTPWorkBegin
+    OnWorkEnd = IdHTTPWorkEnd
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = True
+    Request.Password = 'skirawroclaw'
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Username = 'admin'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 40
+    Top = 320
+  end
+  object SP_Save_Product: TFDStoredProc
+    Connection = FDCon
+    StoredProcName = 'srv52719_homeword.export_products_pol'
+    Left = 584
+    Top = 248
+    ParamData = <
+      item
+        Position = 1
+        Name = 'p_name_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 2
+        Name = 'p_sku'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 3
+        Name = 'p_ean'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 4
+        Name = 'p_description_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 500
+      end
+      item
+        Position = 5
+        Name = 'p_assortment_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 6
+        Name = 'p_type_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 7
+        Name = 'p_manufacturer_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 8
+        Name = 'p_category_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 9
+        Name = 'p_color_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 10
+        Name = 'p_size_pol'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 11
+        Name = 'p_qty'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 12
+        Name = 'p_price'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 13
+        Name = 'p_image1'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end
+      item
+        Position = 14
+        Name = 'p_image2'
+        DataType = ftString
+        ParamType = ptInput
+        Size = 255
+      end>
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDCon
+    SQL.Strings = (
+      'select * from mysql.user')
+    Left = 560
+    Top = 144
+  end
+  object FDCon: TFDConnection
+    Params.Strings = (
+      'DriverID=MySQL'
+      'Server=localhost'
+      'User_Name=srv2'
+      'Password=skirawroclaw'
+      'Database=srv52719_homeword')
+    LoginPrompt = False
+    Left = 272
+    Top = 192
+  end
+end
